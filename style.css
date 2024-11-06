@@ -5,16 +5,24 @@ html, body{
    font-family: 'Poppins', sans-serif;
    margin: 0;
    background-color: #f7eeec;
+   overflow-x: hidden;
+}
+
+main{
+   width: 100vw;
 }
 
 /* nav */
 
 nav{
-   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
    display: flex;
    justify-content: center;
    justify-content: space-between;
    background-color: white;
+   z-index: 10;
+   position: relative;
+   width: 100vw;
 }
 .navbar{
    display: flex;
@@ -22,7 +30,7 @@ nav{
    align-items: center;
    list-style: none;
    margin: 0;
-   padding: 20px;
+   padding: 5px 20px 5px 20px  ;
    gap: 20px;
 }
 /* ul li */
@@ -60,8 +68,8 @@ nav{
 }
 /* nav/avatar */
 .avatar{
-   width: 100px;
-   height: 100px;
+   width: 80px;
+   height: 80px;
    border: solid 2px black;
    border-radius: 100%;
    object-fit: cover;
@@ -72,10 +80,26 @@ nav{
    transform: scale(1.1);
 }
 /* header hero */
+.bgtrouble{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 3px;
+   padding: 20px;
+   backdrop-filter: blur(10px);
+   background: rgba(143, 132, 132, 0.3);
+   border-radius: 15px;
+   font-size: 20px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+.element{
+   z-index: 0;
+}
 .hero{
    width: 100vw;
    height: 100vh;
-   background: url("images/avatar.jpg");
+   background: url("https://brand.assets.adidas.com/capi/frFR/Images/1839567-seo-how-to-break-in-running-shoes-body-image-1_196-681800.jpg");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
@@ -99,6 +123,48 @@ nav{
 }
 .hero p{
    font-weight: 400;
+}
+/* header nav  hero buton */
+.button{
+   width: fit-content;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px 16px;
+   border-radius: 8px;
+   border: solid 2.5px #8005F2;
+   text-decoration: none;
+   font-weight: 500;
+   transition: all .3s ease-in-out;
+}
+
+.button:hover{
+   border: solid 2.5px #ba79f8;
+}
+
+.primary{
+   background: #8005f2;
+   color: white;
+}
+
+.primary:hover{
+   background: #ba79f8;
+}
+
+.secondary{
+   background: transparent;
+   color: #8005F2;
+} 
+
+.secondary:hover{
+   color: #ba79f8;
+}
+
+.buttons-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 16px;
 }
 /* titre body */
 .title{
