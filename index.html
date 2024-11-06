@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css"/>
     <link rel="shortcut icon" href="assets/logo.svg">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
       <header>
@@ -40,7 +41,7 @@
       <main>
         <h1 class="title">Nos dernières sneakers</h1>
         <div class="granddiv">
-          <div class="cards-container">
+          <div class="cards-container" data-aos="fade-right">
               <div class="card">
                   <img src="assets/shoes-1.jpg" alt="">
                   <div class="titles">
@@ -53,7 +54,7 @@
                 </div>
               </div>
           </div>
-          <div class="cards-container">
+          <div class="cards-container" data-aos="fade-right">
             <div class="card">
                 <img src="assets/shoes-2.jpg" alt="">
                 <div class="titles">
@@ -66,7 +67,7 @@
               </div>
             </div>
           </div>
-          <div class="cards-container">
+          <div class="cards-container" data-aos="fade-left">
               <div class="card">
                   <img src="assets/shoes-3.jpg" alt="">
                   <div class="titles">
@@ -79,7 +80,7 @@
                 </div>
               </div>
           </div>
-          <div class="cards-container">
+          <div class="cards-container" data-aos="fade-left">
             <div class="card">
                 <img src="assets/shoes-4.jpg" alt="">
                 <div class="titles">
@@ -107,5 +108,9 @@
       </div>
       <p>@KOOLKICKS 2024</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
