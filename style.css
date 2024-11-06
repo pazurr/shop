@@ -5,12 +5,8 @@ html, body{
    font-family: 'Poppins', sans-serif;
    margin: 0;
    background-color: #f7eeec;
-   overflow-x: hidden;
 }
 
-main{
-   width: 100vw;
-}
 
 /* nav */
 
@@ -22,7 +18,7 @@ nav{
    background-color: white;
    z-index: 10;
    position: relative;
-   width: 100vw;
+   width: 100%;
 }
 .navbar{
    display: flex;
@@ -68,8 +64,8 @@ nav{
 }
 /* nav/avatar */
 .avatar{
-   width: 80px;
-   height: 80px;
+   width: 70px;
+   height: 70px;
    border: solid 2px black;
    border-radius: 100%;
    object-fit: cover;
@@ -89,7 +85,7 @@ nav{
    padding: 20px;
    backdrop-filter: blur(10px);
    background: rgba(143, 132, 132, 0.3);
-   border-radius: 15px;
+   border-radius: 10px;
    font-size: 20px;
    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
 }
@@ -97,7 +93,7 @@ nav{
    z-index: 0;
 }
 .hero{
-   width: 100vw;
+   width: 100%;
    height: 100vh;
    background: url("https://brand.assets.adidas.com/capi/frFR/Images/1839567-seo-how-to-break-in-running-shoes-body-image-1_196-681800.jpg");
    background-repeat: no-repeat;
@@ -280,4 +276,48 @@ footer{
    align-items: center;
    gap: 10px;
    padding:0px 50px 50px 50px ;
+}
+
+
+/* contacte */
+.rond{
+   list-style: none;
+   border-radius: 50%;
+   background-color: white;
+   width: 70px;
+   height: 70px;
+   box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+   display: flex;
+   align-items: center;
+  
+}
+
+.rond a{
+   display: flex;
+   justify-content: center;
+}
+
+.dif{
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+   gap: 30px;
+   transition: all 2s;
+   padding: 0;
+}
+
+.rond:hover{
+   transform: scale(1.1);
+}
+
+.Contact{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+}
+
+.imgcontact{
+   width: 50%;
+   height: 50%;
 }
